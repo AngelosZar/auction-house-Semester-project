@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*  Html elements  */
 @layer base {
   p,
   ul,
@@ -20,5 +21,15 @@
   h5,
   h6 {
     @apply font-primary;
+  }
+}
+
+/* Dark and light mode colors */
+@layer base {
+  html.dark {
+    @apply bg-body-dark text-text-white;
+  }
+  html.light {
+    @apply bg-body-light text-text-black;
   }
 }
