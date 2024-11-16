@@ -108,9 +108,47 @@
       </section>
     </header>
     <main>
-      <div class="container bg-red-400">
-        <p>I am a red container</p>
-      </div>
+      <section class="grid max-w-[700px] place-items-center">
+        <h1 class="">Register a new account</h1>
+        <div class="dark:bg-dark-purple">
+          <ul class="flex">
+            <li class="flex w-full justify-center">
+              <a href="#" class="bg-red-500 px-4 py-4"></a>google
+            </li>
+            <li class="flex w-full justify-center"><a href="#"></a>apple</li>
+            <li class="flex w-full justify-center"><a href="#"></a>facebook</li>
+          </ul>
+        </div>
+        <div>
+          <form action="" method="post">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div>
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div>
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" name="confirm-password" id="confirm-password" />
+            </div>
+            <div>
+              <button type="submit">Sign up</button>
+            </div>
+          </form>
+        </div>
+        <aside>
+          <div>
+            <h6>Already have an account?</h6>
+            <a href="/auth/sign_in/">Sign in </a>
+          </div>
+        </aside>
+      </section>
     </main>
     <footer
       class="bg-body-light dark:bg-body-dark text-text-black dark:text-text-white mx-auto max-w-[1200px] px-4 py-8"
