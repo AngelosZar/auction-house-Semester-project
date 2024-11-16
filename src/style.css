@@ -33,3 +33,7 @@
     @apply bg-body-light text-text-black;
   }
 }
+/* might change to grid ---rethink it*/
+body {
+  @apply grid place-items-center;
+}
