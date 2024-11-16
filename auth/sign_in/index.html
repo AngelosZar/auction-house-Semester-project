@@ -112,12 +112,29 @@
       </section>
     </header>
     <main>
-      <section>
-        <h1 class="">Log in to your account</h1>
-        <div>
-          <ul>
-            <li><a href="#"></a>google</li>
+      <section class="grid max-w-[700px] place-items-center">
+        <h1 class="">Sign in to your account</h1>
+        <div class="dark:bg-dark-purple">
+          <ul class="flex">
+            <li class="flex w-full justify-center"><a href="#" class=""></a>google</li>
+            <li class="flex w-full justify-center"><a href="#"></a>apple</li>
+            <li class="flex w-full justify-center"><a href="#"></a>facebook</li>
           </ul>
+        </div>
+        <div>
+          <form action="" method="post">
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div>
+              <button type="submit">Sign in</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
