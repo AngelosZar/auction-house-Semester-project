@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <header class="bg-body-light dark:bg-bright-black w-full">
+    <header class="w-full bg-body-light dark:bg-bright-black">
       <section class="mx-auto flex max-w-[1440px] items-center justify-between px-4 py-3">
         <div>
           <a href="/"><img src="" alt="" id="header-logo" class="max-w-[220px]" /></a>
@@ -56,47 +56,47 @@
               </button>
               <!-- add dropdown -->
               <div
-                class="dark:bg-bright-black invisible absolute right-0 mt-2 w-48 rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 group-hover:visible group-hover:opacity-100"
+                class="invisible absolute right-0 mt-2 w-48 rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 group-hover:visible group-hover:opacity-100 dark:bg-bright-black"
               >
                 <ul class="py-2 font-bold">
                   <!-- [&>li]:hover:bg-dark-purple -->
                   <li>
                     <a
                       href="/auth/sign_up/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Register</a
                     >
                   </li>
                   <li>
                     <a
                       href="/auth/sign_in/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Log in</a
                     >
                   </li>
                   <li>
                     <a
                       href="/profile/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Profile</a
                     >
                   </li>
                   <li>
                     <a
                       href="/listing/view/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Your items</a
                     >
                   </li>
                   <li>
                     <a
                       href="/listing/create/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >List an item</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                    <a href="#" class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Log out</a
                     >
                   </li>
@@ -108,34 +108,58 @@
       </section>
     </header>
     <main>
-      <section class="grid max-w-[700px] place-items-center">
+      <section
+        class="dark:bg-dark-purple-2 grid w-full max-w-[800px] place-items-center px-16 py-16"
+      >
         <h1 class="">Register a new account</h1>
-        <div class="dark:bg-dark-purple">
-          <ul class="flex">
-            <li class="flex w-full justify-center">
-              <a href="#" class="bg-red-500 px-4 py-4"></a>google
-            </li>
-            <li class="flex w-full justify-center"><a href="#"></a>apple</li>
-            <li class="flex w-full justify-center"><a href="#"></a>facebook</li>
+        <div class="">
+          <ul
+            class="flex [&>li>a]:block [&>li>a]:rounded-lg [&>li>a]:border [&>li>a]:border-white [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:text-center [&>li]:flex-1"
+          >
+            <li><a href="#" class="m-4 block bg-red-500 p-4">google</a></li>
+            <li><a href="#" class="m-4 block bg-black p-4">apple</a></li>
+            <li><a href="#" class="m-4 block bg-blue-500 p-4">facebook</a></li>
           </ul>
         </div>
-        <div>
-          <form action="" method="post">
-            <div>
+        <div class="mt-8 w-full">
+          <form action="" method="post" class="">
+            <div class="">
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email@stud.noroff.no"
+                required
+                class="dark:bg-dark-purple-2 block w-full rounded-lg border-2 border-white bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+              />
             </div>
             <div>
               <label for="username">Username</label>
-              <input type="text" name="username" id="username" />
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="dark:bg-dark-purple-2 block w-full rounded-lg border-2 border-white bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+              />
             </div>
             <div>
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="dark:bg-dark-purple-2 block w-full rounded-lg border-2 border-white bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+              />
             </div>
             <div>
               <label for="confirm-password">Confirm Password</label>
-              <input type="password" name="confirm-password" id="confirm-password" />
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                class="dark:bg-dark-purple-2 block w-full rounded-lg border-2 border-white bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+              />
             </div>
             <div>
               <button type="submit">Sign up</button>
@@ -151,7 +175,7 @@
       </section>
     </main>
     <footer
-      class="bg-body-light dark:bg-body-dark text-text-black dark:text-text-white mx-auto max-w-[1200px] px-4 py-8"
+      class="mx-auto max-w-[1200px] bg-body-light px-4 py-8 text-text-black dark:bg-body-dark dark:text-text-white"
     >
       <section class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div>

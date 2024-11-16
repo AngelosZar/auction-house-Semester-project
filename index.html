@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <header class="bg-body-light dark:bg-bright-black w-full">
+    <header class="w-full bg-body-light dark:bg-bright-black">
       <section class="mx-auto flex max-w-[1440px] items-center justify-between px-4 py-3">
         <div>
           <a href="/"><img src="" alt="" id="header-logo" class="max-w-[220px]" /></a>
@@ -62,47 +62,47 @@
               </button>
               <!-- add dropdown -->
               <div
-                class="dark:bg-bright-black invisible absolute right-0 mt-2 w-48 rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 group-hover:visible group-hover:opacity-100"
+                class="invisible absolute right-0 mt-2 w-48 rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 group-hover:visible group-hover:opacity-100 dark:bg-bright-black"
               >
                 <ul class="py-2 font-bold">
                   <!-- [&>li]:hover:bg-dark-purple -->
                   <li>
                     <a
                       href="/auth/sign_up/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Register</a
                     >
                   </li>
                   <li>
                     <a
                       href="/auth/sign_in/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Log in</a
                     >
                   </li>
                   <li>
                     <a
                       href="/profile/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Profile</a
                     >
                   </li>
                   <li>
                     <a
                       href="/listing/view/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Your items</a
                     >
                   </li>
                   <li>
                     <a
                       href="/listing/create/"
-                      class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                      class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >List an item</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="dark:hover:bg-dark-purple hover:bg-green-1 block px-4 py-4"
+                    <a href="#" class="block px-4 py-4 hover:bg-green-1 dark:hover:bg-dark-purple"
                       >Log out</a
                     >
                   </li>
@@ -115,15 +115,15 @@
     </header>
     <main>
       <div class="container bg-red-400">
-        <p class="font-primary bg-body-dark">I am a red container with font family 1</p>
-        <p class="font-secondary bg-green-1">I am a red container with font family 2</p>
-        <p class="font-secondary bg-dark-purple-1">I am a red container with font family 2</p>
-        <p class="font-secondary bg-dark-blue">I am a red container with font family 2</p>
+        <p class="bg-body-dark font-primary">I am a red container with font family 1</p>
+        <p class="bg-green-1 font-secondary">I am a red container with font family 2</p>
+        <p class="bg-dark-purple-1 font-secondary">I am a red container with font family 2</p>
+        <p class="bg-dark-blue font-secondary">I am a red container with font family 2</p>
         <p class="font-secondary">I am a red container with font family 2</p>
       </div>
     </main>
     <footer
-      class="bg-body-light dark:bg-body-dark text-text-black dark:text-text-white mx-auto max-w-[1200px] px-4 py-8"
+      class="mx-auto max-w-[1200px] bg-body-light px-4 py-8 text-text-black dark:bg-body-dark dark:text-text-white"
     >
       <section class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div>

@@ -17,6 +17,7 @@ export default {
         'dark-purple': '#5333F6',
         'dark-blue': '#07193C',
         'bright-black': '#09101B',
+        'dark-purple-2': '#2F365B',
         text: {
           white: '#FDFDFD',
           black: '#000000',
