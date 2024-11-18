@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/*  Html elements  */
 @layer base {
+  /* Typography */
+  html {
+    font-family: theme('fontFamily.primary');
+  }
+
+  /* Base elements */
   p,
   ul,
   li,
@@ -14,44 +19,47 @@
   button {
     @apply font-primary;
   }
-  h1 {
-    @apply font-secondary;
-    font-size: 60px;
-  }
-  h2 {
-    @apply font-secondary;
-    font-size: 48px;
-  }
-  h3 {
-    @apply font-secondary;
-    font-size: 36px;
-  }
-  h4 {
-    @apply font-secondary;
-    font-size: 30px;
-  }
 
-  h5 {
-    @apply font-secondary;
-    font-size: 24px;
-  }
-
+  /* Heading System */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
   h6 {
     @apply font-secondary;
-    font-size: 20px;
+  }
+
+  h1 {
+    @apply text-6xl;
+  } /* 60px */
+  h2 {
+    @apply text-5xl;
+  } /* 48px */
+  h3 {
+    @apply text-4xl;
+  } /* 36px */
+  h4 {
+    @apply text-3xl;
+  } /* 30px */
+  h5 {
+    @apply text-2xl;
+  } /* 24px */
+  h6 {
+    @apply text-xl;
+  } /* 20px */
+
+  /* Theme Colors */
+  html.dark {
+    @apply bg-body-dark text-text-white transition-colors duration-200;
+  }
+
+  html.light {
+    @apply bg-body-light text-text-black transition-colors duration-200;
   }
 }
 
-/* Dark and light mode colors */
-@layer base {
-  html.dark {
-    @apply bg-body-dark text-text-white;
-  }
-  html.light {
-    @apply bg-body-light text-text-black;
-  }
-}
-/* might change to grid ---rethink it*/
+/* Layout */
 body {
-  @apply grid place-items-center;
+  @apply grid min-h-screen place-items-center;
 }

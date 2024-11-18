@@ -109,7 +109,7 @@
     </header>
     <main>
       <section
-        class="grid w-full max-w-[800px] place-items-center px-16 py-16 dark:bg-dark-purple-2"
+        class="grid w-full max-w-[800px] place-items-center rounded-lg border-2 border-green-1 px-16 py-16 dark:bg-dark-purple-2"
       >
         <h1 class="">Register a new account</h1>
         <div class="">
@@ -168,7 +168,7 @@
             <div>
               <button
                 type="submit"
-                class="hover:bg-green-2 rounded-lg border-2 border-white bg-green-1 px-4 py-2 text-white dark:border-dark-purple dark:bg-dark-purple dark:text-white dark:hover:bg-dark-purple-2"
+                class="rounded-lg border-2 border-white bg-green-1 px-4 py-2 text-white hover:border-green-1 hover:bg-white dark:border-dark-purple dark:bg-dark-purple dark:text-white dark:hover:bg-dark-purple-2"
               >
                 Sign up
               </button>
@@ -178,7 +178,12 @@
         <aside>
           <div>
             <h6>Already have an account?</h6>
-            <a href="/auth/sign_in/">Sign in </a>
+            <a href="/auth/sign_in/" class="dark:hover:bg-dark-purple-2">Sign in </a>
+            <!-- <a
+            href="/auth/sign_in/"
+            class="mt-4 block rounded-lg border-2 p-2 text-center font-bold hover:bg-green-1 dark:border-dark-purple dark:hover:bg-dark-purple"
+            >Sign in
+          </a> -->
           </div>
         </aside>
       </section>

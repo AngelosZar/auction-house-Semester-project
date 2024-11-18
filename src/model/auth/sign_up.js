@@ -7,12 +7,12 @@ export const userData = {
   password: '111fgnfgf1gg5',
   bio: '{bio}',
   avatar: {
-    url: 'https://img.service.com/avatar.jpg', // Optional
-    alt: 'My avatar alt text', // Optional
+    url: 'https://img.service.com/avatar.jpg',
+    alt: 'My avatar alt text',
   },
   banner: {
-    url: 'https://img.service.com/banner.jpg', // Optional
-    alt: 'My banner alt text', // Optional
+    url: 'https://img.service.com/banner.jpg',
+    alt: 'My banner alt text',
   },
 };
 
@@ -55,6 +55,7 @@ export async function signUp(userData) {
 //       "alt": "My banner alt text" // Optional
 //     },
 //     "venueManager": true // Optional
+
 // funcion is working
 // error handling is working
 //  error received from the server is displayed in an alert box
